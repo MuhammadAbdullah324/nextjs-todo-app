@@ -9,12 +9,11 @@ import Step from '@mui/material/Step'
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector'
 import { styled } from '@mui/material/styles'
 
-import Heading from '../GlobalComponents/Heading'
-import SubHeading from '../GlobalComponents/SubHeading'
-import PasswordInput from '../GlobalComponents/PasswordInput'
-import { AlreadyAccountText, SignupContainer, StepLabels, LoginLink } from './SignupStyles'
-import { BackButton, ContinueButton } from '../CustomButtons/CustomButtons'
-import RegisterationCompleted from '../ResisterationCompleted/RegisterationCompleted'
+
+import { AlreadyAccountText, LoginLink, SignupContainer, StepLabels, } from '../signup/SignupStyles'
+
+import { BackButton, ContinueButton } from '../customButtons/CustomButtons'
+import RegisterationCompleted from '../registerationCompleted'
 
 const QontoConnector = styled(StepConnector)(() => ({
 	[`&.${stepConnectorClasses.active}`]: {
@@ -94,7 +93,7 @@ const SignUp = () => {
 			<Box order={3}>
 				{activeStep !== 3 && (
 					<Box mt={4}>
-						<Heading text='Create new account' />
+							<Typography sx={{fontSize:'30px',mb:'10px'}} >Create new account</Typography>
 					</Box>
 				)}
 				<Box component='form' onSubmit={handleSubmit}>

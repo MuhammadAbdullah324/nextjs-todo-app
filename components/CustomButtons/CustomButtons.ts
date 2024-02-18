@@ -75,3 +75,24 @@ export const BackButton = styled(Button)<ButtonProps>(({ theme }) => ({
 		background: theme.palette.background.default,
 	},
 }))
+
+
+export const LavenderButton = styled(Button)<ButtonProps>(({ theme }) => ({
+	color: 'white',
+	width: '150px',
+	backgroundColor: "rebeccapurple",
+	border: 'none',
+	padding: '15px 5px',
+	margin: '15px 0',
+	fontSize: '14px',
+	fontWeight: ' 600',
+	lineHeight: '18px',
+	textTransform: 'none',
+	':hover': {
+		backgroundColor: "#9E77ED",
+	},
+	':disabled': {
+		color: '#f1f1f1',
+		background: "#9E77ED",
+	},
+}))

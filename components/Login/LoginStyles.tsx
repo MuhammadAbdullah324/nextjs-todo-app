@@ -16,10 +16,3 @@ export const CreateAccountText = styled(Typography)(() => ({
 	lineHeight: '18px',
 	textAlign: 'center',
 }))
-
-export const StyledCheckbox = styled('input')(({ theme }) => ({
-	width: '18px',
-	height: '18px',
-	border: `1px solid ${theme.palette.grey[500]}`,
-	marginRight: '10px',
-}))
