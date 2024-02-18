@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { FormControl, useTheme, Box, TextField, FormLabel, SnackbarOrigin, Snackbar } from '@mui/material'
-import { CreateAccountText, SignupLink } from './LoginStyles'
-import Heading from '../GlobalComponents/Heading'
-import { SignInButton } from '../CustomButtons/CustomButtons'
+import { FormControl, useTheme, Box, TextField, FormLabel, SnackbarOrigin, Snackbar, Typography } from '@mui/material'
+import { CreateAccountText, SignupLink } from '../login/LoginStyles'
+import { SignInButton } from '../customButtons/CustomButtons'
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
@@ -68,7 +67,7 @@ const Login = () => {
 
 	return (
 		<Box sx={{ textAlign: 'left' }}>
-			<Heading text="Login to your account" />
+			<Typography sx={{fontSize:'30px',mb:'10px'}} > Login to your account</Typography>
 			
 			<Box component='form' onSubmit={handleSubmit} noValidate>
 				<FormControl>

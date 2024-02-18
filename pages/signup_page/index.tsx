@@ -1,13 +1,13 @@
 "use client"
 import React from 'react'
 import { styled, Box, BoxProps } from '@mui/material'
-import SignUp from '@/components/Signup/Signup'
+import SignUp from '@/components/signup/Signup'
 
 const StyledBox = styled(Box)<BoxProps>(() => ({
-	height: '100vh',
+	height: '80vh',
 	display: 'flex',
 	justifyContent: 'center',
-	alignItems: 'center',
+	alignItems: 'start',
 }))
 
 const SignupPage = () => (
